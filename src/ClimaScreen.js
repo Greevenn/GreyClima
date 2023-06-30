@@ -35,6 +35,16 @@ function ClimaScreen() {
         fetchClimaData();
     }, []);
 
+    if (!climaData) {
+        return (
+            <View>
+                <Text>
+                    Cargando...
+                </Text>
+            </View>
+        );
+    }
+
     
     
 }
